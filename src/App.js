@@ -1,8 +1,8 @@
-
 import React from 'react'
 import videojs from 'video.js'
 import 'video.js/dist/video-js.css'
 import './videojs-resolution-switcher.css'
+import './customVideoPlayer.css'
 
 export default class App extends React.Component {
     state = {
@@ -50,8 +50,8 @@ export default class App extends React.Component {
     }
 
     render = () =>
-        <div >
-            <div data-vjs-player>
+        <div style={{ width: "1280px", height: "720px" }} >
+            <div data-vjs-player >
                 <video
                     controls={true}
                     autoPlay={true}
